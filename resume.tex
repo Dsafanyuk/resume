@@ -1,0 +1,124 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Author:
+% Claud D. Park <posquit0.bj@gmail.com>
+% http://www.posquit0.com
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Configuration
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Themes: Awesome-CV
+\documentclass[]{awesome-cv}
+\usepackage{textcomp}
+%%% Override a directory location for fonts(default: 'fonts/')
+\fontdir[fonts/]
+
+%%% Configure a directory location for sections
+\newcommand*{\sectiondir}{resume/}
+
+%%% Override color
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+%% Color for highlight
+% Define your custom color if you don't like awesome colors
+\colorlet{awesome}{awesome-red}
+%\definecolor{awesome}{HTML}{CA63A8}
+%% Colors for text
+%\definecolor{darktext}{HTML}{414141}
+%\definecolor{text}{HTML}{414141}
+%\definecolor{graytext}{HTML}{414141}
+%\definecolor{lighttext}{HTML}{414141}
+
+%%% Override a separator for social informations in header(default: ' | ')
+%\headersocialsep[\quad\textbar\quad]
+    \begin{document}
+    
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Profile
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{center}
+	\headerfirstnamestyle{DAVID} \headerlastnamestyle{SAFANYUK} \\
+	\vspace{2mm}
+	{\faEnvelope\ Dave.safanyuk@gmail.com} | {\faMobile\ 2158919927} | {\faMapMarker\ Langhorne, PA} | {\faLink\ https://www.linkedin.com/in/david-safanyuk/}
+\end{center}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Education
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\cvsection{Education}
+\begin{cventries}
+	\cventry
+	{BS in Computer Science \& Software Engineering}
+	{Pensacola Christian College}
+	{Pensacola Christian College}
+	{Sept 2015 – June 2019}
+	{}
+\end{cventries}
+
+\vspace{-2mm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Experience
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\cvsection{Experience}
+\begin{cventries}
+	\cventry
+	{Software Engineering Intern}
+	{Comcast Corporation}
+	{Philadelphia, PA}
+	{May 2016 – August 2016}
+	{\begin{cvitems}
+		\item {Created an interface for Bluetooth connections for the Comcast cable boxes.}
+		\item {Participated in an optional internship project to develop a way to track and reduce employees’ carbon footprint.}
+		\item {Added functionality to an internal tool to remotely trigger updates for cable boxes nationwide.}
+		\end{cvitems}}
+	\cventry
+	{Devops Intern}
+	{Comcast Corporation}
+	{Philadelphia, PA}
+	{May 2018 – August 2018}
+	{\begin{cvitems}
+		\item {Participated as a team member in migration of legacy database to new database cluster}
+		\item {Created a CI/CD pipeline using Concourse and Ansible to automate the creation of AWS AMIs}
+		\item {Member of agile team responsible for automating host provisioning}
+		\item {Not only documented but also refactored an existing NodeJS api, to follow a design-driven development process.}
+		\item {Worked with other teams to determine requirements, then worked with my team to develop, test, integrate and launch our product.}
+		\end{cvitems}}
+	\cventry
+	{Operations Manager}
+	{iDryfire Inc.}
+	{Philadelphia, PA}
+	{Jan 2014 – Present}
+	{\begin{cvitems}
+		\item {Operated 2 e-commerce sites and 2 other selling channels.}
+		\item {Integrated 4 selling channels into a centralized system.}
+		\item {Managed national sales team and organized international trade shows.}
+		\item {Lead small marketing and development team to design advertisements and create websites.}
+		\end{cvitems}}
+\end{cventries}
+\cvsection{Skills}
+\begin{cventries}
+	\cventry
+	{}
+	{\def\arraystretch{1.15}{\begin{tabular}{ l l }
+		Programming Languages:  & {\skill{ Javascript, Python, C/C++}} \\
+		Software \& Frameworks:  & {\skill{ Git, Ansible, Concourse (CI/CD, NodeJS, AWS, MySQL, PostgreSQL, MongoDB}} \\
+		\end{tabular}}}
+	{}
+	{}
+	{}
+\end{cventries}
+
+\vspace{-7mm}
+
+
+\ 
+\end{document}
